@@ -13,6 +13,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/ditto')
 2. Styled using Grid.
 3. Pulls and inserts data from an API(PokeAPI) with Fetch.
 4. Implements responsive design on screens less than 800px.
+5. Allows users to find information about Pokemon in the Johto region.
 
 ## Post-MVP
 1. Saves data to the user's browser using localstorage.
