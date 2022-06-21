@@ -2,7 +2,7 @@
 A Pokedex based off the Johto Region.
 
 ## API
-This application uses the following snippet to pull information from PokeAPI.
+This application uses the following snippet to pull information from PokeAPI:
 
 fetch('https://pokeapi.co/api/v2/pokemon/ditto')
     .then(res => res.json())
