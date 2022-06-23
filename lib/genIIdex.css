@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-image: url(background.jpeg);
+}
+
+.input-search {
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    text-align: center;
+    padding: 5px 15px 5px 15px
+}
+
+#search-button {
+    border: none;
+    border-radius: 50%;
+    background-color: yellow;
+    margin-left: 5px;
+}
+
+#show-button {
+    padding: 5px 30px 5px 30px;
+}
