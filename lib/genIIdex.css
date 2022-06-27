@@ -18,7 +18,8 @@ body {
     border-radius: 10px;
     background-color: lightblue;
     text-align: center;
-    padding: 5px 15px 5px 15px
+    padding: 5px 15px 5px 15px;
+    width: 250px;
 }
 
 .hide {
@@ -186,7 +187,7 @@ body {
 
 .dragon {
     border: 2px solid none;
-    background-color: o#7038F8;
+    background-color: #7038F8;
     border-radius: 5px;
     text-align: center;
     color: white;
