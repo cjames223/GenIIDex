@@ -154,3 +154,7 @@ fetch(`${url}?limit=100&offset=151`)
 closeButton.addEventListener('click', () => {
     modalContainer.classList.remove('show')
 })
+
+fetch(url)
+ .then(res => res.json())
+ .then(data => console.log(data.results))
