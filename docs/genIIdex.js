@@ -134,10 +134,10 @@ fetch(`${url}?limit=100&offset=151`)
                             }
                         })
                         search.addEventListener('search', () => {
-                            if(search.value !== '' && search.value.toLowerCase() === imgDiv[i].id.toLowerCase() || search.value.toLowerCase() === type1[i].innerText.toLowerCase() || search.value.toLowerCase() === type2[i].innerText.toLowerCase()) {
+                            if(search.value !== '' && imgDiv[i].id.toLowerCase().startsWith(search.value) || search.value.toLowerCase() === type1[i].innerText.toLowerCase() || search.value.toLowerCase() === type2[i].innerText.toLowerCase()) {
                                 imgDiv[i].style.display = 'block'
                             }   
-                            if(search.value !== '' && search.value.toLowerCase() !== imgDiv[i].id.toLowerCase() && search.value.toLowerCase() !== type1[i].innerText.toLowerCase() && search.value.toLowerCase() !== type2[i].innerText.toLowerCase()) {
+                            if(search.value !== '' && !imgDiv[i].id.toLowerCase().startsWith(search.value) && search.value.toLowerCase() !== type1[i].innerText.toLowerCase() && search.value.toLowerCase() !== type2[i].innerText.toLowerCase()) {
                                 imgDiv[i].style.display = ''
                             }
                             if(search.value === '') {
@@ -162,6 +162,6 @@ closeButton.addEventListener('click', () => {
 
 
 
-fetch(`${url}ho-oh`)
+fetch(`${species}ho-oh`)
     .then(res => res.json())
     .then(data => console.log(data))
