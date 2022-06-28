@@ -134,10 +134,10 @@ fetch(`${url}?limit=100&offset=151`)
                             }
                         })
                         search.addEventListener('search', () => {
-                            if(search.value !== '' && imgDiv[i].id.toLowerCase().startsWith(search.value) || search.value.toLowerCase() === type1[i].innerText.toLowerCase() || search.value.toLowerCase() === type2[i].innerText.toLowerCase()) {
+                            if(search.value !== '' && imgDiv[i].id.toLowerCase().startsWith(search.value.toLowerCase()) || search.value.toLowerCase() === type1[i].innerText.toLowerCase() || search.value.toLowerCase() === type2[i].innerText.toLowerCase()) {
                                 imgDiv[i].style.display = 'block'
                             }   
-                            if(search.value !== '' && !imgDiv[i].id.toLowerCase().startsWith(search.value) && search.value.toLowerCase() !== type1[i].innerText.toLowerCase() && search.value.toLowerCase() !== type2[i].innerText.toLowerCase()) {
+                            if(search.value !== '' && !imgDiv[i].id.toLowerCase().startsWith(search.value.toLowerCase()) && search.value.toLowerCase() !== type1[i].innerText.toLowerCase() && search.value.toLowerCase() !== type2[i].innerText.toLowerCase()) {
                                 imgDiv[i].style.display = ''
                             }
                             if(search.value === '') {

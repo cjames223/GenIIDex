@@ -64,17 +64,24 @@
     pointer-events: auto;
 }
 
-@media screen and (max-width: 873px) {
+@media screen and (max-width: 849px) {
     .modal {
         max-width: 100%;
+        margin: auto;
     }
-
     .modal-image {
-        float: none;
+        float: left;
+        width: 150px;
+    }
+    .modal-header {
+        font-size: 25px;
+    }
+    .modal-info {
+        font-size: 12px;
     }
 }
 
-@media screen and (min-width: 874px) and (max-width: 1000px) {
+@media screen and (min-width: 850px) and (max-width: 1000px) {
     .modal {
         max-width: 85%;
     }
