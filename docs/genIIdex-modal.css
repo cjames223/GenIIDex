@@ -16,6 +16,7 @@
 
 .modal {
     background-image: url(background.jpeg);
+    background-position: center;
     border-radius: 10%;
     padding: 30px 30px 30px;
     text-align: left;
@@ -31,19 +32,22 @@
 
 .modal-header {
     display: grid;
-    color: white;
+    color: black;
+    font-weight: bold;
     font-size: 50px;
 }
 
 .modal-info {
     display: -ms-inline-grid;
-    color: white;
+    font-weight: bold;
+    color: black;
 
 }
 
 #entry {
     display: grid;
-    color: white;
+    color: black;
+    font-weight: bold;
 
 }
 
@@ -51,6 +55,7 @@
     display: grid;
     float: right;
     border-style: none;
+    background-color: none;
 }
 
 .button-text {
