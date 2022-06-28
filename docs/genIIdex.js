@@ -154,14 +154,3 @@ fetch(`${url}?limit=100&offset=151`)
 closeButton.addEventListener('click', () => {
     modalContainer.classList.remove('show')
 })
-
-//search.value.toLowerCase() === imgDiv[i].id.toLowerCase()
-
-
-
-
-
-
-fetch(`${species}ho-oh`)
-    .then(res => res.json())
-    .then(data => console.log(data))
